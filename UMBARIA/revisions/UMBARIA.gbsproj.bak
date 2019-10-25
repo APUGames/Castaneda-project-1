@@ -3,13 +3,13 @@
         "showCollisions": true,
         "showConnections": true,
 <<<<<<< HEAD
-        "worldScrollX": 1393,
-        "worldScrollY": 708,
-        "zoom": 136.48536330461502,
-=======
         "worldScrollX": 1248,
         "worldScrollY": 1368,
         "zoom": 224.92859683185816,
+=======
+        "worldScrollX": 2395,
+        "worldScrollY": 684,
+        "zoom": 227.34978304058313,
 >>>>>>> master
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -226,7 +226,7 @@
                     "id": "f7988808-e17e-4fcc-9d55-a81a59ba9eda",
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
-                        "sceneId": "08a08e2a-569a-4574-822f-1652d85785ac",
+                        "sceneId": "9e9ae8f1-9e73-42da-84fd-bca04cc94570",
                         "x": 7,
                         "y": 11,
                         "direction": "down",
@@ -6580,24 +6580,7 @@
                     "x": 2,
                     "y": 19,
                     "width": 2,
-                    "height": 1,
-                    "script": [
-                        {
-                            "id": "029321a1-9537-415a-9f16-bf2f3762da5e",
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "af306b2b-952a-4a5e-b44f-e9e1a5e53679",
-                                "x": 19,
-                                "y": 3,
-                                "direction": "down",
-                                "fadeSpeed": "2"
-                            }
-                        },
-                        {
-                            "id": "a4bac7da-d148-440c-92bf-3ee3c22eb645",
-                            "command": "EVENT_END"
-                        }
-                    ]
+                    "height": 1
                 },
                 {
                     "trigger": "walk",
@@ -22623,7 +22606,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "black Plains.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -22633,7 +22620,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "acdf3f7b-7c51-4509-93db-a8b745f2aad8",
@@ -22643,7 +22634,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Cave boss battle.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "f651bf61-2444-4694-ade3-97ca478f1507",
@@ -22653,7 +22648,11 @@
             "imageWidth": 240,
             "imageHeight": 200,
             "filename": "Cave pathway.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "1f217cb1-72df-46ed-95f0-09267f3c0681",
@@ -22663,7 +22662,11 @@
             "imageWidth": 240,
             "imageHeight": 200,
             "filename": "cave pathway2.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "102e07dd-0ae4-4bac-901d-b55df678cfe7",
@@ -22673,7 +22676,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "cave pathway3.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "2ca3aeaa-846a-4130-ba09-0d7f2c35e928",
@@ -22683,7 +22690,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Cave room2.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "dde4d4c4-5b64-49ff-8f7c-791ced21d66a",
@@ -22693,7 +22704,11 @@
             "imageWidth": 200,
             "imageHeight": 144,
             "filename": "CavernPathway copy.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "8e0dc63b-f263-4acf-af4b-56424b759bea",
@@ -22703,7 +22718,11 @@
             "imageWidth": 256,
             "imageHeight": 176,
             "filename": "cavernroom1.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "02f443c4-caab-4db8-99ef-fdf2ae9ce540",
@@ -22713,7 +22732,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "ForestBoss.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "87c0251c-85d4-40ab-94a1-e6dd0c01736a",
@@ -22723,7 +22746,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Game Intro.png",
+<<<<<<< HEAD
             "_v": 1572031664346
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "5937f649-de5f-4edc-bdeb-97551ccd71bd",
@@ -22733,7 +22760,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Game Intro2.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -22743,7 +22774,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "0e3b7b21-cdb6-4946-9089-d5edf15adffb",
@@ -22753,7 +22788,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Key room.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -22763,7 +22802,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -22773,7 +22816,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "1b7fa267-d716-40f0-b0d0-f4f966610e07",
@@ -22783,7 +22830,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "16bd87ce-854a-409b-8207-c012be0203c5",
@@ -22793,7 +22844,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "PIneBossBattle.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "4e50b4e7-ff7b-4a8e-b934-5c02b80cb5de",
@@ -22803,7 +22858,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "PIneBossBattle2.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "a8cfae88-2b4f-4905-b2aa-37bc8502ec07",
@@ -22813,7 +22872,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Plains.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "4675d474-310d-49ca-8cad-2630fd720e15",
@@ -22823,7 +22886,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Plains 2.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "c1ce2901-ecc2-4791-98ad-35ffcd5bc97b",
@@ -22833,7 +22900,11 @@
             "imageWidth": 40,
             "imageHeight": 40,
             "filename": "Shadow Eclipse.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "bdecd21f-9c22-4c45-9d49-8b13adba5963",
@@ -22843,7 +22914,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Sprite sheet.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -22853,7 +22928,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "fb71b953-1536-48e1-af4e-7245655d0cf6",
@@ -22863,7 +22942,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Starting room.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195281
+>>>>>>> master
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -22873,7 +22956,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "a067d51d-81ca-422a-b0ac-ec812b378a8f",
@@ -22883,7 +22970,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Tree pathway.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "7c923000-946f-490d-936e-8d66c527f98d",
@@ -22893,7 +22984,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Tree pathway unlit.png",
+<<<<<<< HEAD
             "_v": 1572031664347
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -22903,7 +22998,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
+<<<<<<< HEAD
             "_v": 1572031664348
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "3590339c-76a2-406d-940d-8bb964d8536a",
@@ -22913,7 +23012,11 @@
             "imageWidth": 240,
             "imageHeight": 200,
             "filename": "unlit cavepathway.png",
+<<<<<<< HEAD
             "_v": 1572031664348
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "5118cd5a-f25e-42a6-9507-d9230e2b0157",
@@ -22923,7 +23026,11 @@
             "imageWidth": 204,
             "imageHeight": 306,
             "filename": "untitled.png",
+<<<<<<< HEAD
             "_v": 1572031664348
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "e7fcac6e-e350-4270-a8c2-76e519edb607",
@@ -22933,7 +23040,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Warped nexus.png",
+<<<<<<< HEAD
             "_v": 1572031664348
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "272e8392-fb1f-427c-89e4-ff3dace1ccd5",
@@ -22943,7 +23054,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "win screen.png",
+<<<<<<< HEAD
             "_v": 1572031664348
+=======
+            "_v": 1572011195282
+>>>>>>> master
         }
     ],
     "spriteSheets": [
@@ -22953,7 +23068,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -22961,7 +23080,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -22969,7 +23092,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -22977,7 +23104,11 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "516c5eac-a324-4150-9846-2ff7ed8fe0b2",
@@ -22985,7 +23116,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "E1-Abyssal Specter .png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -22993,7 +23128,11 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "e4b08fc5-f7db-4d03-bd17-209fce544879",
@@ -23001,7 +23140,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "health.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -23009,7 +23152,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "68e65e08-58e2-4367-b518-3baa61138b49",
@@ -23017,7 +23164,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Key.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "66d60078-64e4-46f5-8ab9-a8d5267e13b0",
@@ -23025,7 +23176,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ladder.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -23033,7 +23188,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -23041,7 +23200,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "ff31edef-f07f-45cc-b8df-28a8a70ff17b",
@@ -23049,7 +23212,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Player.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -23057,7 +23224,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "2287ba9a-e977-433f-8237-2f889225bb2a",
@@ -23065,7 +23236,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "regular-rock.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -23073,7 +23248,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -23081,7 +23260,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -23089,7 +23272,11 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "7b0559b8-3b82-42b3-8b2a-ba486f976cd6",
@@ -23097,7 +23284,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Shadow eclispe eye.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -23105,7 +23296,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "55963cb5-8760-46d5-b719-04f97fb26531",
@@ -23113,7 +23308,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Sun Fragment.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -23121,7 +23320,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "78428cb4-e953-46bc-a63b-e05c403a5f0c",
@@ -23129,7 +23332,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "UnmovableRock.png",
+<<<<<<< HEAD
             "_v": 1572031664349
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "6eca0335-3f19-4e6f-81ef-5d38fcd8c14b",
@@ -23137,7 +23344,11 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "Untitled-2.png",
+<<<<<<< HEAD
             "_v": 1572031664357
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "ae055372-c6bb-4040-add4-3650928ca8c3",
@@ -23145,7 +23356,11 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "voideye1.png",
+<<<<<<< HEAD
             "_v": 1572031664373
+=======
+            "_v": 1572011195282
+>>>>>>> master
         },
         {
             "id": "45d2e0a3-d896-4fe1-9c4f-62999dfc78f9",
@@ -23153,7 +23368,11 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "voideye2.png",
+<<<<<<< HEAD
             "_v": 1572031664357
+=======
+            "_v": 1572011195282
+>>>>>>> master
         }
     ],
     "music": [
@@ -23161,7 +23380,11 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
+<<<<<<< HEAD
             "_v": 1572031663955
+=======
+            "_v": 1572011195275
+>>>>>>> master
         }
     ]
 }

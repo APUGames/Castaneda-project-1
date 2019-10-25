@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1248,
-        "worldScrollY": 1368,
-        "zoom": 224.92859683185816,
+        "worldScrollX": 2963,
+        "worldScrollY": 395,
+        "zoom": 167.6753537580371,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
         "customColorsDark": "306850",
@@ -55,7 +55,7 @@
                 0,
                 0,
                 0,
-                0,
+                1,
                 0,
                 0,
                 0,
@@ -204,7 +204,7 @@
                         "input": [
                             "a"
                         ],
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -225,7 +225,7 @@
                         "y": 11,
                         "direction": "down",
                         "fadeSpeed": "2",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -6649,7 +6649,7 @@
                 126,
                 62,
                 191,
-                69,
+                5,
                 70,
                 34,
                 191,
@@ -6678,7 +6678,7 @@
                 126,
                 190,
                 197,
-                68,
+                64,
                 74,
                 190,
                 253,
@@ -6750,29 +6750,21 @@
                     "name": "staircase",
                     "script": [
                         {
-                            "id": "2c1c1da2-3289-43d0-84f8-a1247e7c3f11",
-                            "command": "EVENT_ACTOR_HIDE",
-                            "args": {
-                                "actorId": "27e0fb58-5a3e-4f19-8114-3a9c3ace7fee"
-                            }
-                        },
-                        {
-                            "id": "682d2451-f4c7-4fdc-b100-db4a2a5d7966",
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "36"
-                            }
-                        },
-                        {
                             "id": "dc89bd63-d3c3-4132-bb5c-9ec51fb9cdd8",
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "36",
-                                "__collapse": false,
-                                "__collapseElse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
+                                    {
+                                        "id": "c0112a57-6d83-4838-9eca-0c660038d364",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "27e0fb58-5a3e-4f19-8114-3a9c3ace7fee"
+                                        }
+                                    },
                                     {
                                         "id": "0ea4c822-66ab-4217-8b8d-b4da1e52761e",
                                         "command": "EVENT_SWITCH_SCENE",
@@ -6780,8 +6772,15 @@
                                             "sceneId": "c01c7a7d-23a2-4d20-b23e-08a154e88451",
                                             "x": 9,
                                             "y": 16,
-                                            "direction": "up",
+                                            "direction": "",
                                             "fadeSpeed": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "682d2451-f4c7-4fdc-b100-db4a2a5d7966",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "2"
                                         }
                                     },
                                     {
@@ -6791,17 +6790,17 @@
                                 ],
                                 "false": [
                                     {
+                                        "id": "b8ecc125-f4e4-4d45-909d-760eaebec8f2",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "27e0fb58-5a3e-4f19-8114-3a9c3ace7fee"
+                                        }
+                                    },
+                                    {
                                         "id": "60eb6637-531b-41d2-b767-5b8a8337ff74",
                                         "command": "EVENT_END"
                                     }
                                 ]
-                            }
-                        },
-                        {
-                            "id": "aa039b00-d8b7-4e6b-a317-93b185fa068e",
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "2"
                             }
                         },
                         {
@@ -6850,77 +6849,7 @@
                             }
                         },
                         {
-                            "id": "0c335c74-f1e4-4e9d-8f11-335cfd835101",
-                            "command": "EVENT_ACTOR_HIDE",
-                            "args": {
-                                "actorId": "100f0442-ac36-4da5-b51a-8fcc2bf4d7b5"
-                            }
-                        },
-                        {
                             "id": "8a382117-19ac-45cd-a9e5-2029722ae0ec",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                },
-                {
-                    "spriteSheetId": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "id": "9cd17de6-6f2f-4d5b-b9fc-af2137bd091c",
-                    "x": 7,
-                    "y": 8,
-                    "script": [
-                        {
-                            "id": "f153ea67-c8b4-413c-a365-a80df563860d",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "What is the\nanswer?"
-                                ],
-                                "avatarId": ""
-                            }
-                        },
-                        {
-                            "id": "2fb9939b-5e88-45d0-a692-9ae0501377af",
-                            "command": "EVENT_CHOICE",
-                            "args": {
-                                "variable": "36",
-                                "trueText": "1",
-                                "falseText": "7"
-                            }
-                        },
-                        {
-                            "id": "4c77c90f-216a-42b4-8ad0-54a332f5a190",
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "36"
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "e219a9bf-083d-4f29-a407-0ebd5addb2e5",
-                                        "command": "EVENT_ACTOR_HIDE",
-                                        "args": {
-                                            "actorId": "9cd17de6-6f2f-4d5b-b9fc-af2137bd091c"
-                                        }
-                                    },
-                                    {
-                                        "id": "e323fde1-5316-42e3-b39c-0afe8134af43",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "7ce954c9-36b1-426b-aecc-0ddc629c9c35",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": "9038817a-662c-4a0b-befe-556856dca0e6",
                             "command": "EVENT_END"
                         }
                     ]
@@ -6934,6 +6863,69 @@
                     "y": 31,
                     "width": 2,
                     "height": 1
+                },
+                {
+                    "trigger": "walk",
+                    "id": "3535be1f-8d45-417e-ae9f-343b3ff765a9",
+                    "x": 3,
+                    "y": 28,
+                    "width": 4,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "b33d592b-22b8-4f07-b3b5-5ccdbe6f2e6f",
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "53"
+                            }
+                        },
+                        {
+                            "id": "8a382117-19ac-45cd-a9e5-2029722ae0ec",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "3c928e23-ccbc-460a-a164-7ae9e18f3ba9",
+                    "x": 25,
+                    "y": 21,
+                    "width": 4,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "6a0a940c-7674-4dd5-ae97-55b8e9e6c38e",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "53"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "d01c1ba6-a4ba-41b2-9daa-908b23daec5d",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "36"
+                                        }
+                                    },
+                                    {
+                                        "id": "ddf55293-5f52-4037-b64f-21820667c8a1",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "7470c4e2-ebe1-47ed-b278-bab467b4dc76",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8a382117-19ac-45cd-a9e5-2029722ae0ec",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "trigger": "walk",
@@ -7083,38 +7075,38 @@
                 255,
                 249,
                 31,
-                6,
-                130,
-                97,
-                32,
+                0,
+                128,
+                1,
+                0,
                 24,
-                6,
-                130,
-                97,
-                32,
+                0,
+                128,
+                1,
+                0,
                 24,
-                6,
-                130,
-                97,
-                32,
+                0,
+                128,
+                1,
+                0,
                 24,
-                6,
-                130,
-                97,
-                32,
+                0,
+                128,
+                1,
+                0,
                 24,
-                6,
-                130,
-                97,
-                32,
+                0,
+                128,
+                1,
+                0,
                 24,
-                6,
-                130,
-                97,
-                32,
+                0,
+                128,
+                1,
+                0,
                 24,
-                6,
-                130,
+                0,
+                128,
                 127,
                 224,
                 31,
@@ -7162,953 +7154,23 @@
                 },
                 {
                     "spriteSheetId": "7b0559b8-3b82-42b3-8b2a-ba486f976cd6",
-                    "movementType": "static",
+                    "movementType": "faceInteraction",
                     "direction": "down",
-                    "moveSpeed": "0",
-                    "animSpeed": "1",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
                     "id": "5bc23d85-d382-4509-91f9-ff508010f24d",
                     "x": 7,
-                    "y": 10,
-                    "script": [
-                        {
-                            "id": "7c512ddd-8382-48e6-ab96-fe221b3084b7",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "The shadow eclipse\nattcked!"
-                                ],
-                                "avatarId": "",
-                                "__collapse": true,
-                                "__comment": true
-                            }
-                        },
-                        {
-                            "id": "cef141c9-9699-42d1-b237-6c183599a355",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "You must fight!"
-                                ],
-                                "avatarId": "",
-                                "__collapse": true,
-                                "__comment": true
-                            }
-                        },
-                        {
-                            "id": "279cf32a-f8e1-403c-bea7-cb04692902c7",
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "17",
-                                "value": 35,
-                                "__collapse": true,
-                                "__comment": true
-                            }
-                        },
-                        {
-                            "id": "d17fc522-be7f-4a2d-8d10-ceaa6cdfcd96",
-                            "command": "EVENT_LOOP",
-                            "args": {
-                                "__collapse": true,
-                                "__comment": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "74916748-1a64-483e-9a6c-40723b86da7d",
-                                        "command": "EVENT_SET_TRUE",
-                                        "args": {
-                                            "variable": "16"
-                                        }
-                                    },
-                                    {
-                                        "id": "92b3b44f-f73e-45d3-b7d0-828d9be301c4",
-                                        "command": "EVENT_IF_TRUE",
-                                        "args": {
-                                            "variable": "16",
-                                            "__collapse": false,
-                                            "__collapseElse": true
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "id": "f7fb6d73-0916-41c6-bdb5-8a9281e7db45",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "101",
-                                                        "operation": "set",
-                                                        "other": "rnd",
-                                                        "vectorY": "16",
-                                                        "value": "1",
-                                                        "minValue": 1,
-                                                        "maxValue": 3,
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "29a644af-c7ce-4cf1-8926-213f1133ed10",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "101",
-                                                        "operator": "==",
-                                                        "comparator": 3,
-                                                        "__collapse": false,
-                                                        "__collapseElse": false
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "7fd03523-f406-44ac-9ec9-d642594e6c7b",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "17",
-                                                                    "operation": "sub",
-                                                                    "other": "val",
-                                                                    "vectorY": "17",
-                                                                    "value": 15,
-                                                                    "minValue": "0",
-                                                                    "maxValue": "255"
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "54c5c0f7-f05f-4917-9923-c1031ada9421",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You Critically\nhit for 15!\nEclipse has $17$ ",
-                                                                        "HP left..."
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "795b35e0-b0b0-44e4-b2a7-6280fd1d867e",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "ac802e6f-94c4-4be5-817b-f9f8afd2bb58",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "17",
-                                                                    "operator": "<=",
-                                                                    "comparator": "0",
-                                                                    "__collapse": false,
-                                                                    "__collapseElse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "412094c7-ac48-4d73-8335-42fce9d23538",
-                                                                            "command": "EVENT_SET_VALUE",
-                                                                            "args": {
-                                                                                "variable": "17",
-                                                                                "value": "0"
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "7dce644d-9e2a-413b-b94d-542f55ad5b79",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "6e5f4c04-904b-412b-964f-7973b5899509",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                "__type": "event"
-                                                            },
-                                                            {
-                                                                "id": "563489bf-13c5-4b84-a318-370cf6c75fed",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "17",
-                                                                    "operation": "sub",
-                                                                    "other": "val",
-                                                                    "vectorY": "17",
-                                                                    "value": 8,
-                                                                    "minValue": "0",
-                                                                    "maxValue": "255"
-                                                                },
-                                                                "__type": "event"
-                                                            },
-                                                            {
-                                                                "id": "fb6dcf61-1357-4b04-a2b0-d4e90dd2c7f3",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "17",
-                                                                    "operator": "<=",
-                                                                    "comparator": "0",
-                                                                    "__collapse": false,
-                                                                    "__collapseElse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "bb535b85-4f3a-4233-8375-8c9b734ac7bb",
-                                                                            "command": "EVENT_SET_VALUE",
-                                                                            "args": {
-                                                                                "variable": "17",
-                                                                                "value": "0"
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "bc46b4be-8574-4b1e-8fcb-b15fdaaee7e8",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "f5a2041d-e5e5-4401-8682-05dcfdd794be",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "0de7f7a8-f32b-4c50-9e0d-fdde44582004",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You hit for 8 Dmg!\nEclipse has $17$\nHP left..."
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "cadba986-e6d1-4f0b-9093-bbab92faaa09",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "ae5ec375-4e18-478d-9228-c6863481f8d1",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "17",
-                                                        "operator": "<=",
-                                                        "comparator": "0",
-                                                        "__collapse": false,
-                                                        "__collapseElse": true
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "f24dc837-d23b-4033-b23f-e647fa6b71a9",
-                                                                "command": "EVENT_ACTOR_HIDE",
-                                                                "args": {
-                                                                    "actorId": "2533b36c-cf4d-4dc6-a7eb-f8abc8ffc125",
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "bcb6f7a3-c01f-403f-9a5c-f1e0d23566b9",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You won!"
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "3921e7f0-910f-4239-94b0-beda46fa99e5",
-                                                                "command": "EVENT_STOP",
-                                                                "args": {}
-                                                            },
-                                                            {
-                                                                "id": "9bc749ee-e83b-4c81-8a5b-b2593e274cc4",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "c8dd1f75-ea84-4a6b-91c8-756d8b44215d",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "d7d2f16f-c7ec-463f-8479-8aedcd67efc7",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "17",
-                                                        "operator": ">=",
-                                                        "comparator": 240,
-                                                        "__collapse": true,
-                                                        "__collapseElse": true
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "37e1dfc8-ec5b-49c7-bee0-5a01bdf8c0f0",
-                                                                "command": "EVENT_ACTOR_HIDE",
-                                                                "args": {
-                                                                    "actorId": "2533b36c-cf4d-4dc6-a7eb-f8abc8ffc125",
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "91eeec94-4bcb-44b2-95e6-532ad647124c",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You won!"
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "15ef1465-4f05-4bd6-b68f-985c63ce3fca",
-                                                                "command": "EVENT_STOP",
-                                                                "args": {
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "c2f3fb24-989c-4c47-96dd-cb19670e8d37",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "ec148146-5855-47e2-b95c-84c64a8166ce",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "a20a1240-df4f-4464-9b41-998b84b66b7c",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "1",
-                                                        "operation": "sub",
-                                                        "other": "val",
-                                                        "vectorY": "102",
-                                                        "value": 10,
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "be11d06f-6aad-49e3-a119-14e7ae303585",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "The Eclipse\ndamaged you for\n10 damage!",
-                                                            "you have $01$\nHealth left!"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "d1fadf37-35fe-4476-a5ab-ace90566abc7",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "1",
-                                                        "operator": "==",
-                                                        "comparator": "0",
-                                                        "__collapseElse": true,
-                                                        "__collapse": true
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "12737941-e8e8-416a-bef8-07302099caa2",
-                                                                "command": "EVENT_SET_TRUE",
-                                                                "args": {
-                                                                    "variable": "103",
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "b9f7ea9b-6e2f-4d25-9266-fccddb82ced8",
-                                                                "command": "EVENT_IF_TRUE",
-                                                                "args": {
-                                                                    "variable": "103",
-                                                                    "__collapseElse": true,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "952f003d-41e3-43fb-a049-9324c4da93da",
-                                                                            "command": "EVENT_ACTOR_HIDE",
-                                                                            "args": {
-                                                                                "actorId": "player"
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "6ecf4ee6-cffc-4a77-95d6-efad3473cf85",
-                                                                            "command": "EVENT_TEXT",
-                                                                            "args": {
-                                                                                "text": [
-                                                                                    "You...you were\ndefeated..."
-                                                                                ],
-                                                                                "avatarId": ""
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "fed10c1d-a663-43b2-ad22-dc2173cd80f3",
-                                                                            "command": "EVENT_STOP",
-                                                                            "args": {}
-                                                                        },
-                                                                        {
-                                                                            "id": "0f63ecdb-c5a2-469a-97d8-8eebb063ca49",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "00d564bc-3ed7-4c61-85b1-24a8312e6a31",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "4c4a99e6-e4a8-4380-b32c-2c33a8ca7356",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "971c62d5-dfd1-42eb-9326-d497408a5510",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "fba08a6a-194e-40db-8bd9-fc557795f4b9",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "d6be490d-2116-4ebf-b367-4e6ff06e0d12",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "It didnt chase\nme..."
-                                                        ],
-                                                        "avatarId": ""
-                                                    }
-                                                },
-                                                {
-                                                    "id": "fdc1777c-9b8b-4de2-a043-bcd3120f9da8",
-                                                    "command": "EVENT_STOP",
-                                                    "args": {}
-                                                },
-                                                {
-                                                    "id": "7bac3673-7817-481c-902f-6a81791a0451",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "id": "5df4068f-bc49-4748-a020-25b01b3f1175",
-                                        "command": "EVENT_SET_FALSE",
-                                        "args": {
-                                            "variable": "16",
-                                            "__collapse": true
-                                        }
-                                    },
-                                    {
-                                        "id": "81506935-af86-40ea-a2dd-1f926ffb1d2c",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            },
-                            "__type": "event"
-                        },
-                        {
-                            "id": "cb861cda-08b6-4341-ae1d-89dd61f5a447",
-                            "command": "EVENT_END"
-                        }
-                    ],
-                    "animate": true
+                    "y": 10
                 },
                 {
                     "spriteSheetId": "7b0559b8-3b82-42b3-8b2a-ba486f976cd6",
-                    "movementType": "static",
+                    "movementType": "faceInteraction",
                     "direction": "down",
-                    "moveSpeed": "0",
-                    "animSpeed": "1",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
                     "id": "fede484e-192d-4c6c-b262-14c8972f2805",
                     "x": 11,
-                    "y": 10,
-                    "script": [
-                        {
-                            "id": "46b6535b-e898-49eb-87dd-ed75613a932a",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "The shadow eclipse\nattcked!"
-                                ],
-                                "avatarId": "",
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "1a4de387-cfae-4ab8-87cd-0774d691a4ab",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "You must fight!"
-                                ],
-                                "avatarId": "",
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "2ae16fa3-10eb-4211-8983-8f5a8091ff56",
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "17",
-                                "value": 35,
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "484f9a25-f324-484f-9cda-d8b8a2d7a3f6",
-                            "command": "EVENT_LOOP",
-                            "args": {
-                                "__collapse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "8afbc6e7-2085-4bff-b9a7-9cf9c96787cf",
-                                        "command": "EVENT_SET_TRUE",
-                                        "args": {
-                                            "variable": "16"
-                                        }
-                                    },
-                                    {
-                                        "id": "eda35427-df79-4f0b-82dd-1d667ddd7391",
-                                        "command": "EVENT_IF_TRUE",
-                                        "args": {
-                                            "variable": "16",
-                                            "__collapse": false,
-                                            "__collapseElse": true
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "id": "3bdf64cc-b472-455d-8d62-ad4b94c1d89b",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "101",
-                                                        "operation": "set",
-                                                        "other": "rnd",
-                                                        "vectorY": "16",
-                                                        "value": "1",
-                                                        "minValue": 1,
-                                                        "maxValue": 3,
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "af9d4b94-99b7-401a-8b3f-3444120a7dfb",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "101",
-                                                        "operator": "==",
-                                                        "comparator": 3,
-                                                        "__collapse": false,
-                                                        "__collapseElse": false
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "81a773f7-2f31-405e-bca4-a35144707469",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "17",
-                                                                    "operation": "sub",
-                                                                    "other": "val",
-                                                                    "vectorY": "17",
-                                                                    "value": 15,
-                                                                    "minValue": "0",
-                                                                    "maxValue": "255"
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "43745974-0bb7-480a-a367-71dc3c1ec72a",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You Critically\nhit for 15!\nEclipse has $17$ ",
-                                                                        "HP left..."
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "25da7be6-a96c-4789-a039-0458d5adf46d",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "4f798f62-f139-45d1-9b58-f18649913699",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "17",
-                                                                    "operator": "<=",
-                                                                    "comparator": "0",
-                                                                    "__collapse": false,
-                                                                    "__collapseElse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "f109c22c-017d-4639-b81f-609a4414eca0",
-                                                                            "command": "EVENT_SET_VALUE",
-                                                                            "args": {
-                                                                                "variable": "17",
-                                                                                "value": "0"
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "143257c5-de9a-48ea-a3e4-6da67e9b0846",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "be41bfe5-485c-4daf-8726-a4349d2dd0f2",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                "__type": "event"
-                                                            },
-                                                            {
-                                                                "id": "848c28db-1341-418d-86d8-14ce9eba446f",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "17",
-                                                                    "operation": "sub",
-                                                                    "other": "val",
-                                                                    "vectorY": "17",
-                                                                    "value": 8,
-                                                                    "minValue": "0",
-                                                                    "maxValue": "255"
-                                                                },
-                                                                "__type": "event"
-                                                            },
-                                                            {
-                                                                "id": "9b732e28-ce07-44f9-bfe6-b76cb3761373",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "17",
-                                                                    "operator": "<=",
-                                                                    "comparator": "0",
-                                                                    "__collapse": false,
-                                                                    "__collapseElse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "8492aae8-fa7b-4961-b4e4-afd016860f2e",
-                                                                            "command": "EVENT_SET_VALUE",
-                                                                            "args": {
-                                                                                "variable": "17",
-                                                                                "value": "0"
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "bab93f15-73d9-4318-98e7-167e6379a5ad",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "20c7be21-ab13-44c9-af32-b91278be12d3",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "09ff8b3e-a017-4627-823e-bee35d9b1c90",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You hit for 8 Dmg!\nEclipse has $17$\nHP left..."
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "9abb47b8-dda0-4f34-a947-ab1de72efecd",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "0af1f1ed-5bc1-4b6f-943a-1e97852f5702",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "17",
-                                                        "operator": "<=",
-                                                        "comparator": "0",
-                                                        "__collapse": false,
-                                                        "__collapseElse": true
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "fdb5ce53-bd93-40a6-a413-30077c10e8c4",
-                                                                "command": "EVENT_ACTOR_HIDE",
-                                                                "args": {
-                                                                    "actorId": "2533b36c-cf4d-4dc6-a7eb-f8abc8ffc125",
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "1eb0d704-7a87-4e0d-95d6-c7a5a8a2b62e",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You won!"
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "eac85ea6-dd98-489b-995f-5b19ae02f695",
-                                                                "command": "EVENT_STOP",
-                                                                "args": {}
-                                                            },
-                                                            {
-                                                                "id": "70d70e30-43bb-4c4e-83fa-a612469a0a1b",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "9202b695-068b-4105-a954-3e5fddb3b949",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "bc55ea77-8e0b-4ec5-885a-688152135770",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "17",
-                                                        "operator": ">=",
-                                                        "comparator": 240,
-                                                        "__collapse": true,
-                                                        "__collapseElse": true
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "83687417-8cd9-4d38-9623-2d2e91a22147",
-                                                                "command": "EVENT_ACTOR_HIDE",
-                                                                "args": {
-                                                                    "actorId": "2533b36c-cf4d-4dc6-a7eb-f8abc8ffc125",
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "69515398-27a6-4f78-bb9b-680ae4efc05a",
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "You won!"
-                                                                    ],
-                                                                    "avatarId": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "b2fc7d75-bdd0-4153-9003-00b8db4a5811",
-                                                                "command": "EVENT_STOP",
-                                                                "args": {
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "449b4112-1e8f-4b0a-999c-425684a61f94",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "ad00b498-6ab2-4b4f-ab81-cde92389614f",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "ad85c8de-a79a-4a9a-870a-5712a33359cd",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "1",
-                                                        "operation": "sub",
-                                                        "other": "val",
-                                                        "vectorY": "102",
-                                                        "value": 10,
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "629de699-6873-483f-ac09-edecea3da9e1",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "The Eclipse\ndamaged you for\n10 damage!",
-                                                            "you have $01$\nHealth left!"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "114a46db-4858-46d3-91c7-1c4aae9b1d74",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "1",
-                                                        "operator": "==",
-                                                        "comparator": "0",
-                                                        "__collapseElse": true,
-                                                        "__collapse": true
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "id": "5917cc7a-3a4b-4a45-8118-0424ae890a7c",
-                                                                "command": "EVENT_SET_TRUE",
-                                                                "args": {
-                                                                    "variable": "103",
-                                                                    "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "d420460e-04de-4f1f-988a-0306cb96edf6",
-                                                                "command": "EVENT_IF_TRUE",
-                                                                "args": {
-                                                                    "variable": "103",
-                                                                    "__collapseElse": true,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "92ba4995-f376-4dc6-90c9-0b8bafc661ec",
-                                                                            "command": "EVENT_ACTOR_HIDE",
-                                                                            "args": {
-                                                                                "actorId": "player"
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "9cd2795a-2353-4d60-aa5d-b66d269f8b1b",
-                                                                            "command": "EVENT_TEXT",
-                                                                            "args": {
-                                                                                "text": [
-                                                                                    "You...you were\ndefeated..."
-                                                                                ],
-                                                                                "avatarId": ""
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "c17c12cc-1ce4-4c88-8936-523dc649bbce",
-                                                                            "command": "EVENT_STOP",
-                                                                            "args": {}
-                                                                        },
-                                                                        {
-                                                                            "id": "d5e751a6-fd32-4442-9040-0cfa991f084e",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "253f91cf-7601-41c5-bd0c-3fa7e98f567a",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "25862c3b-b649-4232-a764-515dbeaf9aa8",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "id": "1bb41bb0-56aa-46dc-b7b6-7f65fab4f88d",
-                                                                "command": "EVENT_END"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "551f40ec-128a-4274-8873-026c5fd63f66",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "052994b9-4f5a-488c-a8bf-1763b7209781",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "It didnt chase\nme..."
-                                                        ],
-                                                        "avatarId": ""
-                                                    }
-                                                },
-                                                {
-                                                    "id": "e2967c43-1b71-4af1-8df7-8b32a5ab7029",
-                                                    "command": "EVENT_STOP",
-                                                    "args": {}
-                                                },
-                                                {
-                                                    "id": "e760559f-99c8-495e-91af-9d16ae84ed5e",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "id": "141181a8-c7b9-4e0e-a65a-96d95e0e8b34",
-                                        "command": "EVENT_SET_FALSE",
-                                        "args": {
-                                            "variable": "16",
-                                            "__collapse": true
-                                        }
-                                    },
-                                    {
-                                        "id": "8d4db70e-e820-4bda-9de8-e608b48f6b10",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            },
-                            "__type": "event"
-                        },
-                        {
-                            "id": "14bd47ee-2375-4c3b-a89e-ba94ff131341",
-                            "command": "EVENT_END"
-                        }
-                    ],
-                    "animate": true
+                    "y": 10
                 }
             ],
             "triggers": [
@@ -8141,71 +7203,78 @@
                     "trigger": "walk",
                     "id": "5bc3a688-38b1-49fe-bd49-4aeb7225be99",
                     "x": 0,
-                    "y": 16,
+                    "y": 13,
                     "width": 20,
                     "height": 1,
                     "script": [
-                        {
-                            "id": "a4890cd7-1bc4-44f6-87d4-23e6a317bcf4",
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "2",
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "ef22cb79-b07f-4b57-9f72-1d7566d733fd",
-                            "command": "EVENT_ACTOR_MOVE_TO",
-                            "args": {
-                                "actorId": "5bc23d85-d382-4509-91f9-ff508010f24d",
-                                "x": 7,
-                                "y": 12,
-                                "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "5a62c823-8bc5-4bb6-baca-5c5acddf1bb4",
-                            "command": "EVENT_ACTOR_MOVE_TO",
-                            "args": {
-                                "actorId": "fede484e-192d-4c6c-b262-14c8972f2805",
-                                "x": 11,
-                                "y": 13,
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "4b0dc71b-1848-42bf-a1bc-f5410eb848be",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Two shadow\neclipses\nattcked!"
-                                ],
-                                "avatarId": "",
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "cd8b592e-e5e5-4363-8b80-8d0c2828b2a3",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "You must fight!"
-                                ],
-                                "avatarId": "",
-                                "__collapse": true
-                            }
-                        },
                         {
                             "id": "53fa1db3-82fc-46ef-a496-67fbcae4dc63",
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "2",
                                 "__collapse": false,
-                                "__collapseElse": true,
-                                "__comment": false
+                                "__collapseElse": true
                             },
                             "children": {
                                 "true": [
+                                    {
+                                        "id": "d0769bc7-a55e-49c8-b4e9-a37ace371340",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "5bc23d85-d382-4509-91f9-ff508010f24d",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "b18110cc-f923-42a4-a99a-e285418b2c15",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "fede484e-192d-4c6c-b262-14c8972f2805",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "ef22cb79-b07f-4b57-9f72-1d7566d733fd",
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "5bc23d85-d382-4509-91f9-ff508010f24d",
+                                            "x": 7,
+                                            "y": 12,
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "5a62c823-8bc5-4bb6-baca-5c5acddf1bb4",
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "fede484e-192d-4c6c-b262-14c8972f2805",
+                                            "x": 11,
+                                            "y": 13,
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "4b0dc71b-1848-42bf-a1bc-f5410eb848be",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Two shadow\neclipses\nattcked!"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "cd8b592e-e5e5-4363-8b80-8d0c2828b2a3",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You must fight!"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        }
+                                    },
                                     {
                                         "id": "0cd3155d-414a-4b32-aa92-59bb19571012",
                                         "command": "EVENT_SET_VALUE",
@@ -8525,7 +7594,7 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "The two Shadows\nattacked you for\n10 damage!",
+                                                                        "The Stwo ecplipses\nattacked you for\n10 damage!",
                                                                         "you have $01$\nHealth left!"
                                                                     ],
                                                                     "avatarId": "",
@@ -9227,6 +8296,15 @@
                     "y": 3,
                     "script": [
                         {
+                            "id": "26e8b913-8a59-4407-91df-426831d45ffb",
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "1a32780f-96bc-49f0-8b43-d69e311d8c3f",
+                                "emoteId": 0,
+                                "__collapse": true
+                            }
+                        },
+                        {
                             "id": "f6ce6609-2339-4561-b16b-c015374acd92",
                             "command": "EVENT_TEXT",
                             "args": {
@@ -9686,21 +8764,7 @@
                     "animSpeed": "3",
                     "id": "d98ece3c-9903-4692-a85c-ca2d75a57979",
                     "x": 8,
-                    "y": 5,
-                    "script": [
-                        {
-                            "id": "49750ce5-7ba1-4335-b64a-cfa5905abe56",
-                            "command": "EVENT_ACTOR_HIDE",
-                            "args": {
-                                "actorId": "d98ece3c-9903-4692-a85c-ca2d75a57979",
-                                "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "1104ca69-bbc3-4d15-a92e-f9429fc691b1",
-                            "command": "EVENT_END"
-                        }
-                    ]
+                    "y": 4
                 },
                 {
                     "spriteSheetId": "e4b08fc5-f7db-4d03-bd17-209fce544879",
@@ -9718,14 +8782,6 @@
                             "args": {
                                 "variable": "1",
                                 "value": 100
-                            }
-                        },
-                        {
-                            "id": "cc3a40be-3d6b-4f42-bde4-138d28349220",
-                            "command": "EVENT_ACTOR_HIDE",
-                            "args": {
-                                "actorId": "9ef33989-8585-4775-978b-fccba5cc5b82",
-                                "__collapse": false
                             }
                         },
                         {
@@ -9784,20 +8840,6 @@
                             "command": "EVENT_END"
                         }
                     ]
-                }
-            ],
-            "script": [
-                {
-                    "id": "537eaa89-bfcf-423f-8052-9306b17f132d",
-                    "command": "EVENT_ACTOR_EMOTE",
-                    "args": {
-                        "actorId": "1a32780f-96bc-49f0-8b43-d69e311d8c3f",
-                        "emoteId": 0
-                    }
-                },
-                {
-                    "id": "1104ca69-bbc3-4d15-a92e-f9429fc691b1",
-                    "command": "EVENT_END"
                 }
             ]
         },
@@ -21783,8 +20825,8 @@
                     "spriteSheetId": "7b0559b8-3b82-42b3-8b2a-ba486f976cd6",
                     "movementType": "static",
                     "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "2",
+                    "moveSpeed": "2",
+                    "animSpeed": "3",
                     "id": "40a77edc-4e14-4167-9c3f-9f9c7a57da11",
                     "x": 15,
                     "y": 13,
@@ -21795,7 +20837,7 @@
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "0",
-                    "animSpeed": "2",
+                    "animSpeed": "4",
                     "id": "f5e3ea7b-7ca6-4b27-9209-823cf2d6520f",
                     "x": 15,
                     "y": 18,
@@ -21832,8 +20874,8 @@
                             "command": "EVENT_SET_VALUE",
                             "args": {
                                 "variable": "17",
-                                "value": 80,
-                                "__collapse": false
+                                "value": 100,
+                                "__collapse": true
                             }
                         },
                         {
@@ -21848,8 +20890,7 @@
                                         "id": "dbb7968a-97ae-47ce-b3f9-bd96b308b0f3",
                                         "command": "EVENT_SET_TRUE",
                                         "args": {
-                                            "variable": "16",
-                                            "__collapse": true
+                                            "variable": "16"
                                         }
                                     },
                                     {
@@ -21883,7 +20924,7 @@
                                                         "variable": "101",
                                                         "operator": "==",
                                                         "comparator": 3,
-                                                        "__collapse": true,
+                                                        "__collapse": false,
                                                         "__collapseElse": false
                                                     },
                                                     "children": {
@@ -21925,7 +20966,7 @@
                                                                     "variable": "17",
                                                                     "operator": "<=",
                                                                     "comparator": "0",
-                                                                    "__collapse": true,
+                                                                    "__collapse": false,
                                                                     "__collapseElse": true
                                                                 },
                                                                 "children": {
@@ -21962,8 +21003,7 @@
                                                                     "vectorY": "17",
                                                                     "value": 8,
                                                                     "minValue": "0",
-                                                                    "maxValue": "255",
-                                                                    "__collapse": true
+                                                                    "maxValue": "255"
                                                                 },
                                                                 "__type": "event"
                                                             },
@@ -21974,7 +21014,7 @@
                                                                     "variable": "17",
                                                                     "operator": "<=",
                                                                     "comparator": "0",
-                                                                    "__collapse": true,
+                                                                    "__collapse": false,
                                                                     "__collapseElse": true
                                                                 },
                                                                 "children": {
@@ -22007,8 +21047,7 @@
                                                                     "text": [
                                                                         "You hit for 8 Dmg!\nThe void has $17$\nHP left..."
                                                                     ],
-                                                                    "avatarId": "",
-                                                                    "__collapse": true
+                                                                    "avatarId": ""
                                                                 }
                                                             },
                                                             {
@@ -22025,7 +21064,7 @@
                                                         "variable": "17",
                                                         "operator": "<=",
                                                         "comparator": "0",
-                                                        "__collapse": true,
+                                                        "__collapse": false,
                                                         "__collapseElse": true
                                                     },
                                                     "children": {
@@ -22072,9 +21111,7 @@
                                                             {
                                                                 "id": "6b4f6742-9e32-46ac-8afc-128e14006ab9",
                                                                 "command": "EVENT_STOP",
-                                                                "args": {
-                                                                    "__collapse": false
-                                                                }
+                                                                "args": {}
                                                             },
                                                             {
                                                                 "id": "b850117a-c679-4786-963b-3d12e773f9db",
@@ -22096,7 +21133,7 @@
                                                         "variable": "17",
                                                         "operator": ">=",
                                                         "comparator": 240,
-                                                        "__collapse": true,
+                                                        "__collapse": false,
                                                         "__collapseElse": true
                                                     },
                                                     "children": {
@@ -22183,7 +21220,7 @@
                                                             "you have $01$\nHealth left!"
                                                         ],
                                                         "avatarId": "",
-                                                        "__collapse": true
+                                                        "__collapse": false
                                                     }
                                                 },
                                                 {
@@ -22212,7 +21249,7 @@
                                                                 "args": {
                                                                     "variable": "103",
                                                                     "__collapseElse": true,
-                                                                    "__collapse": false
+                                                                    "__collapse": true
                                                                 },
                                                                 "children": {
                                                                     "true": [
@@ -22334,41 +21371,12 @@
                     "animSpeed": "2",
                     "id": "96d7e776-1754-438a-b534-599a9cc3aeb7",
                     "x": 15,
-                    "y": 14,
+                    "y": 15,
                     "frame": null,
                     "animate": true
                 }
             ],
-            "triggers": [
-                {
-                    "trigger": "walk",
-                    "id": "8c1791e3-7416-4216-aad7-b7980017a94d",
-                    "x": 15,
-                    "y": 12,
-                    "width": 2,
-                    "height": 7,
-                    "script": [
-                        {
-                            "id": "c9bb609e-c51b-4cb5-bd0b-291b618b911e",
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "a9dc6980-4662-4b35-a05e-3da99369bc34",
-                                "x": 0,
-                                "y": 0,
-                                "direction": "",
-                                "fadeSpeed": "2",
-                                "__collapse": false,
-                                "__comment": false
-                            },
-                            "__type": "event"
-                        },
-                        {
-                            "id": "b407ba6a-e729-4c8e-9122-383ae341dfb9",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                }
-            ]
+            "triggers": []
         },
         {
             "name": "Scene 20",
@@ -22426,68 +21434,7 @@
             "x": 2377.263230895828,
             "y": 361.66678225173064,
             "actors": [],
-            "triggers": [],
-            "script": [
-                {
-                    "id": "78624e56-1668-4a2c-b3e1-6be33aefb1e6",
-                    "command": "EVENT_HIDE_SPRITES",
-                    "args": {}
-                },
-                {
-                    "id": "cdfed01e-0225-473e-a142-574f748b7146",
-                    "command": "EVENT_SET_INPUT_SCRIPT",
-                    "args": {
-                        "input": "a"
-                    },
-                    "children": {
-                        "true": [
-                            {
-                                "id": "3bc8e297-4003-4fc1-931a-69d896788828",
-                                "command": "EVENT_IF_INPUT",
-                                "args": {
-                                    "input": [
-                                        "a",
-                                        "start"
-                                    ]
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "id": "2ff8dd93-049c-44cb-b353-67b16c4fdba1",
-                                            "command": "EVENT_SWITCH_SCENE",
-                                            "args": {
-                                                "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
-                                                "x": 0,
-                                                "y": 0,
-                                                "direction": "",
-                                                "fadeSpeed": "2"
-                                            }
-                                        },
-                                        {
-                                            "id": "180cf4cd-2296-4a38-86b6-ebfdea519361",
-                                            "command": "EVENT_END"
-                                        }
-                                    ],
-                                    "false": [
-                                        {
-                                            "id": "4dbc1435-d17b-404f-a5f7-bb42d8a0f4a1",
-                                            "command": "EVENT_END"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "id": "dd2f749d-05b2-4032-be15-bfbf4350750b",
-                                "command": "EVENT_END"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "id": "8a382117-19ac-45cd-a9e5-2029722ae0ec",
-                    "command": "EVENT_END"
-                }
-            ]
+            "triggers": []
         }
     ],
     "_version": "1.2.0",
@@ -22600,7 +21547,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "black Plains.png",
-            "_v": 1572031664346
+            "_v": 1571999590659
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -22610,7 +21557,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "acdf3f7b-7c51-4509-93db-a8b745f2aad8",
@@ -22620,7 +21567,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Cave boss battle.png",
-            "_v": 1572031664346
+            "_v": 1571999590659
         },
         {
             "id": "f651bf61-2444-4694-ade3-97ca478f1507",
@@ -22630,7 +21577,7 @@
             "imageWidth": 240,
             "imageHeight": 200,
             "filename": "Cave pathway.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "1f217cb1-72df-46ed-95f0-09267f3c0681",
@@ -22640,7 +21587,7 @@
             "imageWidth": 240,
             "imageHeight": 200,
             "filename": "cave pathway2.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "102e07dd-0ae4-4bac-901d-b55df678cfe7",
@@ -22650,7 +21597,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "cave pathway3.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "2ca3aeaa-846a-4130-ba09-0d7f2c35e928",
@@ -22660,7 +21607,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Cave room2.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "dde4d4c4-5b64-49ff-8f7c-791ced21d66a",
@@ -22670,7 +21617,7 @@
             "imageWidth": 200,
             "imageHeight": 144,
             "filename": "CavernPathway copy.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "8e0dc63b-f263-4acf-af4b-56424b759bea",
@@ -22680,7 +21627,7 @@
             "imageWidth": 256,
             "imageHeight": 176,
             "filename": "cavernroom1.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "02f443c4-caab-4db8-99ef-fdf2ae9ce540",
@@ -22690,7 +21637,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "ForestBoss.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "87c0251c-85d4-40ab-94a1-e6dd0c01736a",
@@ -22700,7 +21647,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Game Intro.png",
-            "_v": 1572031664346
+            "_v": 1571999590660
         },
         {
             "id": "5937f649-de5f-4edc-bdeb-97551ccd71bd",
@@ -22710,7 +21657,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Game Intro2.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -22720,7 +21667,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "0e3b7b21-cdb6-4946-9089-d5edf15adffb",
@@ -22730,7 +21677,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Key room.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -22740,7 +21687,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -22750,7 +21697,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "1b7fa267-d716-40f0-b0d0-f4f966610e07",
@@ -22760,7 +21707,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "16bd87ce-854a-409b-8207-c012be0203c5",
@@ -22770,7 +21717,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "PIneBossBattle.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "4e50b4e7-ff7b-4a8e-b934-5c02b80cb5de",
@@ -22780,7 +21727,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "PIneBossBattle2.png",
-            "_v": 1572031664347
+            "_v": 1571999590660
         },
         {
             "id": "a8cfae88-2b4f-4905-b2aa-37bc8502ec07",
@@ -22790,7 +21737,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Plains.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "4675d474-310d-49ca-8cad-2630fd720e15",
@@ -22800,7 +21747,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Plains 2.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "c1ce2901-ecc2-4791-98ad-35ffcd5bc97b",
@@ -22810,7 +21757,7 @@
             "imageWidth": 40,
             "imageHeight": 40,
             "filename": "Shadow Eclipse.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "bdecd21f-9c22-4c45-9d49-8b13adba5963",
@@ -22820,7 +21767,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Sprite sheet.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -22830,7 +21777,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "fb71b953-1536-48e1-af4e-7245655d0cf6",
@@ -22840,7 +21787,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Starting room.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -22850,7 +21797,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "a067d51d-81ca-422a-b0ac-ec812b378a8f",
@@ -22860,7 +21807,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Tree pathway.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "7c923000-946f-490d-936e-8d66c527f98d",
@@ -22870,7 +21817,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Tree pathway unlit.png",
-            "_v": 1572031664347
+            "_v": 1571999590661
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -22880,7 +21827,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "_v": 1572031664348
+            "_v": 1571999590661
         },
         {
             "id": "3590339c-76a2-406d-940d-8bb964d8536a",
@@ -22890,7 +21837,7 @@
             "imageWidth": 240,
             "imageHeight": 200,
             "filename": "unlit cavepathway.png",
-            "_v": 1572031664348
+            "_v": 1571999590661
         },
         {
             "id": "5118cd5a-f25e-42a6-9507-d9230e2b0157",
@@ -22900,7 +21847,7 @@
             "imageWidth": 204,
             "imageHeight": 306,
             "filename": "untitled.png",
-            "_v": 1572031664348
+            "_v": 1571999590661
         },
         {
             "id": "e7fcac6e-e350-4270-a8c2-76e519edb607",
@@ -22910,7 +21857,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Warped nexus.png",
-            "_v": 1572031664348
+            "_v": 1571999590661
         },
         {
             "id": "272e8392-fb1f-427c-89e4-ff3dace1ccd5",
@@ -22920,7 +21867,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "win screen.png",
-            "_v": 1572031664348
+            "_v": 1571999590661
         }
     ],
     "spriteSheets": [
@@ -22930,7 +21877,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "_v": 1572031664349
+            "_v": 1571999590661
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -22938,7 +21885,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1572031664349
+            "_v": 1571999590661
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -22946,7 +21893,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "_v": 1572031664349
+            "_v": 1571999590661
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -22954,7 +21901,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "_v": 1572031664349
+            "_v": 1571999590661
         },
         {
             "id": "516c5eac-a324-4150-9846-2ff7ed8fe0b2",
@@ -22962,7 +21909,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "E1-Abyssal Specter .png",
-            "_v": 1572031664349
+            "_v": 1571999590661
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -22970,7 +21917,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "_v": 1572031664349
+            "_v": 1571999590661
         },
         {
             "id": "e4b08fc5-f7db-4d03-bd17-209fce544879",
@@ -22978,7 +21925,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "health.png",
-            "_v": 1572031664349
+            "_v": 1571999590661
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -22986,7 +21933,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "68e65e08-58e2-4367-b518-3baa61138b49",
@@ -22994,7 +21941,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Key.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "66d60078-64e4-46f5-8ab9-a8d5267e13b0",
@@ -23002,7 +21949,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ladder.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -23010,7 +21957,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -23018,7 +21965,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "ff31edef-f07f-45cc-b8df-28a8a70ff17b",
@@ -23026,7 +21973,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Player.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -23034,7 +21981,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "2287ba9a-e977-433f-8237-2f889225bb2a",
@@ -23042,7 +21989,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "regular-rock.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -23050,7 +21997,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -23058,7 +22005,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -23066,7 +22013,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "7b0559b8-3b82-42b3-8b2a-ba486f976cd6",
@@ -23074,7 +22021,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Shadow eclispe eye.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -23082,7 +22029,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "55963cb5-8760-46d5-b719-04f97fb26531",
@@ -23090,7 +22037,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Sun Fragment.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -23098,7 +22045,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "78428cb4-e953-46bc-a63b-e05c403a5f0c",
@@ -23106,7 +22053,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "UnmovableRock.png",
-            "_v": 1572031664349
+            "_v": 1571999590662
         },
         {
             "id": "6eca0335-3f19-4e6f-81ef-5d38fcd8c14b",
@@ -23114,7 +22061,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "Untitled-2.png",
-            "_v": 1572031664357
+            "_v": 1571999590666
         },
         {
             "id": "ae055372-c6bb-4040-add4-3650928ca8c3",
@@ -23122,7 +22069,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "voideye1.png",
-            "_v": 1572031664373
+            "_v": 1571999590683
         },
         {
             "id": "45d2e0a3-d896-4fe1-9c4f-62999dfc78f9",
@@ -23130,7 +22077,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "voideye2.png",
-            "_v": 1572031664357
+            "_v": 1571999590683
         }
     ],
     "music": [
@@ -23138,7 +22085,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1572031663955
+            "_v": 1571999590232
         }
     ]
 }
