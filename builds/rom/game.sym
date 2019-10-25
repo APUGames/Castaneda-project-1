@@ -8,8 +8,8 @@
 00:1D3A s__BASE
 00:1F14 s__LIT
 00:1F14 s__GSINIT
-00:25CD s__GSINITTAIL
-00:25CE s__GSFINAL
+00:25D9 s__GSINITTAIL
+00:25DA s__GSFINAL
 01:4000 s__CODE_1
 01:4000 s__CODE_3
 01:4000 s__CODE_4
@@ -17,14 +17,15 @@
 01:4000 s__CODE_6
 01:4000 s__CODE_7
 01:4000 s__CODE_8
+01:4000 s__CODE_9
 00:C000 .OAM
 00:C0A0 s__DATA
-00:C5D4 s__BSS
-00:C632 s__HEAP
-00:C632 s__BSEG
-00:C632 s__ISEG
-00:C632 s__XSEG
-00:C632 s__OVERLAY
+00:C5D6 s__BSS
+00:C634 s__HEAP
+00:C634 s__BSEG
+00:C634 s__ISEG
+00:C634 s__XSEG
+00:C634 s__OVERLAY
 00:E000 .STACK
 00:FF80 .refresh_OAM
 ; Area: _CODE
@@ -301,49 +302,49 @@
 00:C3EE _script_start_stack
 00:C3FE _script_cmds
 00:C512 _bank_data_ptrs
-00:C524 _music_tracks
-00:C528 _script_variables
-00:C594 gbt_playing
-00:C595 gbt_song
-00:C597 gbt_bank
-00:C598 gbt_speed
-00:C599 gbt_temp_play_data
-00:C5A5 gbt_loop_enabled
-00:C5A6 gbt_ticks_elapsed
-00:C5A7 gbt_current_step
-00:C5A8 gbt_current_pattern
-00:C5A9 gbt_current_step_data_ptr
-00:C5AB gbt_channels_enabled
-00:C5AC gbt_pan
-00:C5B0 gbt_vol
-00:C5B4 gbt_instr
-00:C5B8 gbt_freq
-00:C5BE gbt_channel3_loaded_instrument
-00:C5BF gbt_arpeggio_freq_index
-00:C5C8 gbt_arpeggio_enabled
-00:C5CB gbt_arpeggio_tick
-00:C5CE gbt_cut_note_tick
-00:C5D2 gbt_have_to_stop_next_step
-00:C5D3 gbt_update_pattern_pointers
+00:C526 _music_tracks
+00:C52A _script_variables
+00:C596 gbt_playing
+00:C597 gbt_song
+00:C599 gbt_bank
+00:C59A gbt_speed
+00:C59B gbt_temp_play_data
+00:C5A7 gbt_loop_enabled
+00:C5A8 gbt_ticks_elapsed
+00:C5A9 gbt_current_step
+00:C5AA gbt_current_pattern
+00:C5AB gbt_current_step_data_ptr
+00:C5AD gbt_channels_enabled
+00:C5AE gbt_pan
+00:C5B2 gbt_vol
+00:C5B6 gbt_instr
+00:C5BA gbt_freq
+00:C5C0 gbt_channel3_loaded_instrument
+00:C5C1 gbt_arpeggio_freq_index
+00:C5CA gbt_arpeggio_enabled
+00:C5CD gbt_arpeggio_tick
+00:C5D0 gbt_cut_note_tick
+00:C5D4 gbt_have_to_stop_next_step
+00:C5D5 gbt_update_pattern_pointers
 ; Area: _BSS
-00:C5D4 __cpu
-00:C5D5 .mode
-00:C5D6 __io_out
-00:C5D7 __io_in
-00:C5D8 __io_status
-00:C5D9 .vbl_done
-00:C5DA __current_bank
-00:C5DB _sys_time
-00:C5DB .sys_time
-00:C5DD .int_0x40
-00:C5ED .int_0x48
-00:C5FD .int_0x50
-00:C60D .int_0x58
-00:C61D .int_0x60
-00:C62D .randhi
-00:C62E .randlo
+00:C5D6 __cpu
+00:C5D7 .mode
+00:C5D8 __io_out
+00:C5D9 __io_in
+00:C5DA __io_status
+00:C5DB .vbl_done
+00:C5DC __current_bank
+00:C5DD _sys_time
+00:C5DD .sys_time
+00:C5DF .int_0x40
+00:C5EF .int_0x48
+00:C5FF .int_0x50
+00:C60F .int_0x58
+00:C61F .int_0x60
+00:C62F .randhi
+00:C630 .randlo
 ; Area: _HEAP
-00:C632 _malloc_heap_start
+00:C634 _malloc_heap_start
 ; Area: _OVERLAY
 ; Area: _ISEG
 ; Area: _BSEG
@@ -495,14 +496,16 @@
 01:6838 _SceneIsEmoting_b
 01:6844 _SceneCameraAtDest_b
 01:6893 _SceneAwaitInputPressed_b
+; Area: _CODE_9
+01:4000 _bank_9_data
 ; Area: _CODE_5
 01:4000 _tileset_bank_ptrs
 01:4012 _background_bank_ptrs
 01:4048 _sprite_bank_ptrs
 01:4072 _scene_bank_ptrs
 01:40AE _string_bank_ptrs
-01:4162 _avatar_bank_ptrs
-01:4165 _music_banks
+01:4168 _avatar_bank_ptrs
+01:416B _music_banks
 ; Area: _CODE_7
 01:4000 _bank_7_data
 ; Area: _CODE_8

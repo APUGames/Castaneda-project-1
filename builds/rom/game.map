@@ -17,26 +17,27 @@ AREA .  .ABS.
 		l__LIT	0000
 		l__GSINITTAIL	0001
 		l__BSS	005E
-		l__CODE_5	0167
+		l__CODE_5	016D
 		l__BASE	01DA
 		l__HEADER	01E1
 		s__CODE	0200
 		l__HOME	0312
-		l__DATA	0534
+		l__CODE_9	0477
+		l__DATA	0536
 		l__CODE_1	0671
-		l__GSINIT	06B9
+		l__GSINIT	06C5
 		l__CODE	1828
 		s__HOME	1A28
 		s__BASE	1D3A
 		s__LIT	1F14
 		s__GSINIT	1F14
-		s__GSINITTAIL	25CD
-		s__GSFINAL	25CE
+		s__GSINITTAIL	25D9
+		s__GSFINAL	25DA
 		l__CODE_3	28EF
 		l__CODE_4	2FA5
-		l__CODE_8	3E23
-		l__CODE_7	3EBD
-		l__CODE_6	3FB4
+		l__CODE_6	3A68
+		l__CODE_7	3F4B
+		l__CODE_8	3FA5
 		s__CODE_1	4000
 		s__CODE_3	4000
 		s__CODE_4	4000
@@ -44,14 +45,15 @@ AREA .  .ABS.
 		s__CODE_6	4000
 		s__CODE_7	4000
 		s__CODE_8	4000
+		s__CODE_9	4000
 		.OAM	C000
 		s__DATA	C0A0
-		s__BSS	C5D4
-		s__HEAP	C632
-		s__BSEG	C632
-		s__ISEG	C632
-		s__XSEG	C632
-		s__OVERLAY	C632
+		s__BSS	C5D6
+		s__HEAP	C634
+		s__BSEG	C634
+		s__ISEG	C634
+		s__XSEG	C634
+		s__OVERLAY	C634
 		.STACK	E000
 		.refresh_OAM	FF80
 AREA _CODE
@@ -255,24 +257,24 @@ AREA _LIT
 AREA _GSINIT
 	RADIX HEX
 	BASE 1F14
-	SIZE 06B9
+	SIZE 06C5
 	ATTRIB REL CON
 	GLOBALS
 		gsinit	1F14
 AREA _GSINITTAIL
 	RADIX HEX
-	BASE 25CD
+	BASE 25D9
 	SIZE 0001
 	ATTRIB REL CON
 AREA _GSFINAL
 	RADIX HEX
-	BASE 25CE
+	BASE 25DA
 	SIZE 0000
 	ATTRIB REL CON
 AREA _DATA
 	RADIX HEX
 	BASE C0A0
-	SIZE 0534
+	SIZE 0536
 	ATTRIB REL CON
 	GLOBALS
 		_current_index	C0A0
@@ -370,77 +372,77 @@ AREA _DATA
 		_script_start_stack	C3EE
 		_script_cmds	C3FE
 		_bank_data_ptrs	C512
-		_music_tracks	C524
-		_script_variables	C528
-		gbt_playing	C594
-		gbt_song	C595
-		gbt_bank	C597
-		gbt_speed	C598
-		gbt_temp_play_data	C599
-		gbt_loop_enabled	C5A5
-		gbt_ticks_elapsed	C5A6
-		gbt_current_step	C5A7
-		gbt_current_pattern	C5A8
-		gbt_current_step_data_ptr	C5A9
-		gbt_channels_enabled	C5AB
-		gbt_pan	C5AC
-		gbt_vol	C5B0
-		gbt_instr	C5B4
-		gbt_freq	C5B8
-		gbt_channel3_loaded_instrument	C5BE
-		gbt_arpeggio_freq_index	C5BF
-		gbt_arpeggio_enabled	C5C8
-		gbt_arpeggio_tick	C5CB
-		gbt_cut_note_tick	C5CE
-		gbt_have_to_stop_next_step	C5D2
-		gbt_update_pattern_pointers	C5D3
+		_music_tracks	C526
+		_script_variables	C52A
+		gbt_playing	C596
+		gbt_song	C597
+		gbt_bank	C599
+		gbt_speed	C59A
+		gbt_temp_play_data	C59B
+		gbt_loop_enabled	C5A7
+		gbt_ticks_elapsed	C5A8
+		gbt_current_step	C5A9
+		gbt_current_pattern	C5AA
+		gbt_current_step_data_ptr	C5AB
+		gbt_channels_enabled	C5AD
+		gbt_pan	C5AE
+		gbt_vol	C5B2
+		gbt_instr	C5B6
+		gbt_freq	C5BA
+		gbt_channel3_loaded_instrument	C5C0
+		gbt_arpeggio_freq_index	C5C1
+		gbt_arpeggio_enabled	C5CA
+		gbt_arpeggio_tick	C5CD
+		gbt_cut_note_tick	C5D0
+		gbt_have_to_stop_next_step	C5D4
+		gbt_update_pattern_pointers	C5D5
 AREA _BSS
 	RADIX HEX
-	BASE C5D4
+	BASE C5D6
 	SIZE 005E
 	ATTRIB REL CON
 	GLOBALS
-		__cpu	C5D4
-		.mode	C5D5
-		__io_out	C5D6
-		__io_in	C5D7
-		__io_status	C5D8
-		.vbl_done	C5D9
-		__current_bank	C5DA
-		_sys_time	C5DB
-		.sys_time	C5DB
-		.int_0x40	C5DD
-		.int_0x48	C5ED
-		.int_0x50	C5FD
-		.int_0x58	C60D
-		.int_0x60	C61D
-		.randhi	C62D
-		.randlo	C62E
+		__cpu	C5D6
+		.mode	C5D7
+		__io_out	C5D8
+		__io_in	C5D9
+		__io_status	C5DA
+		.vbl_done	C5DB
+		__current_bank	C5DC
+		_sys_time	C5DD
+		.sys_time	C5DD
+		.int_0x40	C5DF
+		.int_0x48	C5EF
+		.int_0x50	C5FF
+		.int_0x58	C60F
+		.int_0x60	C61F
+		.randhi	C62F
+		.randlo	C630
 AREA _HEAP
 	RADIX HEX
-	BASE C632
+	BASE C634
 	SIZE 0000
 	ATTRIB REL CON
 	GLOBALS
-		_malloc_heap_start	C632
+		_malloc_heap_start	C634
 AREA _OVERLAY
 	RADIX HEX
-	BASE C632
+	BASE C634
 	SIZE 0000
 	ATTRIB REL CON
 AREA _ISEG
 	RADIX HEX
-	BASE C632
+	BASE C634
 	SIZE 0000
 	ATTRIB REL CON
 AREA _BSEG
 	RADIX HEX
-	BASE C632
+	BASE C634
 	SIZE 0000
 	ATTRIB REL CON
 AREA _XSEG
 	RADIX HEX
-	BASE C632
+	BASE C634
 	SIZE 0000
 	ATTRIB REL CON
 AREA _CODE_4
@@ -600,10 +602,17 @@ AREA _CODE_3
 		_SceneIsEmoting_b	6838
 		_SceneCameraAtDest_b	6844
 		_SceneAwaitInputPressed_b	6893
+AREA _CODE_9
+	RADIX HEX
+	BASE 4000
+	SIZE 0477
+	ATTRIB REL CON
+	GLOBALS
+		_bank_9_data	4000
 AREA _CODE_5
 	RADIX HEX
 	BASE 4000
-	SIZE 0167
+	SIZE 016D
 	ATTRIB REL CON
 	GLOBALS
 		_tileset_bank_ptrs	4000
@@ -611,26 +620,26 @@ AREA _CODE_5
 		_sprite_bank_ptrs	4048
 		_scene_bank_ptrs	4072
 		_string_bank_ptrs	40AE
-		_avatar_bank_ptrs	4162
-		_music_banks	4165
+		_avatar_bank_ptrs	4168
+		_music_banks	416B
 AREA _CODE_7
 	RADIX HEX
 	BASE 4000
-	SIZE 3EBD
+	SIZE 3F4B
 	ATTRIB REL CON
 	GLOBALS
 		_bank_7_data	4000
 AREA _CODE_8
 	RADIX HEX
 	BASE 4000
-	SIZE 3E23
+	SIZE 3FA5
 	ATTRIB REL CON
 	GLOBALS
 		_bank_8_data	4000
 AREA _CODE_6
 	RADIX HEX
 	BASE 4000
-	SIZE 3FB4
+	SIZE 3A68
 	ATTRIB REL CON
 	GLOBALS
 		_bank_6_data	4000
@@ -650,41 +659,43 @@ MODULES
 	FILE /var/folders/j3/h4ypzk8d1w18x410lbnx3l5m0000gn/T//_gbs/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE obj/BankData.o
-		NAME lcc28940
+		NAME lcc54190
 	FILE obj/MusicManager.o
-		NAME lcc28980
+		NAME lcc54230
 	FILE obj/game.o
-		NAME lcc29020
+		NAME lcc54270
 	FILE obj/Math.o
-		NAME lcc29060
+		NAME lcc54310
 	FILE obj/ScriptRunner_b.o
-		NAME lcc29100
+		NAME lcc54350
 	FILE obj/Stack.o
-		NAME lcc29140
+		NAME lcc54390
 	FILE obj/FadeManager.o
-		NAME lcc29180
+		NAME lcc54430
 	FILE obj/Scene.o
-		NAME lcc29220
+		NAME lcc54470
 	FILE obj/BankManager.o
-		NAME lcc29260
+		NAME lcc54510
 	FILE obj/UI_b.o
-		NAME lcc29300
+		NAME lcc54550
 	FILE obj/Scene_b.o
-		NAME lcc29340
+		NAME lcc54590
 	FILE obj/UI.o
-		NAME lcc29380
+		NAME lcc54630
 	FILE obj/ScriptRunner.o
-		NAME lcc29420
+		NAME lcc54670
+	FILE obj/data/bank_9.o
+		NAME lcc54710
 	FILE obj/data/data_ptrs.o
-		NAME lcc29460
+		NAME lcc54750
 	FILE obj/data/bank_7.o
-		NAME lcc29500
+		NAME lcc54790
 	FILE obj/data/bank_8.o
-		NAME lcc29540
+		NAME lcc54830
 	FILE obj/data/bank_6.o
-		NAME lcc29580
+		NAME lcc54870
 	FILE obj/SpriteHelpers.o
-		NAME lcc29620
+		NAME lcc54910
 	FILE obj/gbt_player.o
 	FILE obj/gbt_player_bank1.o
 LIBRARIES
