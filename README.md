@@ -1,5 +1,6 @@
 # UMBARIA
 A game made by Matthew Castaneda at APU
+
 Contact: mcastaneda18@apu.edu
 
 # Description
@@ -10,4 +11,5 @@ Navigate to the builds folder and either download the web directory to play on a
 
 # Controls 
 Web: Z, X, Enter (Start), and arrow keys for movement.
+
 Rom: A,B, Start, Select, D-Pad (movement)
