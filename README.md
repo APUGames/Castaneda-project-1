@@ -1,5 +1,5 @@
 # UMBARIA
-A game made by Matthew Castaneda at APU
+A game produced at APU by Matthew Castaneda
 
 Contact: mcastaneda18@apu.edu
 
